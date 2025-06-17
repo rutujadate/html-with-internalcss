@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <title>Netflix</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .backgroundImage {
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_medium.jpg");
+            height: 750px;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .netflixLogo {
+            width: 10%;
+            margin-top: 20px;
+            margin-left: 150px;
+        }
+
+        .signPage {
+            width: 25%;
+            margin: auto;
+            margin-top: 20px;
+            background-color: rgba(14, 13, 13, 0.575);
+            padding: 20px 40px;
+        }
+
+        .signIntext {
+            font-size: 28px;
+            color: rgb(255, 255, 255);
+            margin: 20px 0px;
+            font-weight: 800;
+        }
+
+        .inputFeild {
+            padding: 15px;
+            width: 100%;
+            background-color: transparent;
+            margin: 10px 0px;
+            border: 1px solid gray;
+            font-size: 15px;
+            font-weight: bold;
+            /* color:rgb(255, 255, 255); */
+        }
+
+        .signInButton {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(229, 9, 20);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .signInButton:hover {
+            background-color: rgb(170, 19, 26);
+            cursor: pointer;
+        }
+
+        .or {
+            display: flex;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 15px 0px;
+        }
+
+        .useASignInCode {
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(58, 57, 57, 0.6);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .useASignInCode:hover {
+            cursor: pointer;
+            background-color: rgba(27, 27, 27, 0.6);
+        }
+
+        .forgotLink {
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0px;
+        }
+        .checkBox{
+            color:white;
+            font-size: 15px;
+        }
+        .newToNetflix{
+            color:#FFFFFFB3;
+        }
+        .signUpNow{
+            color:white;
+            text-decoration: none;
+        }
+        .signUpNow:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .paragraph{
+            color:#FFFFFFB3;
+            line-height: 20px;
+            margin-top: 20px;
+        }
+        .link{
+            text-decoration: none;
+            color:#448Ef4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backgroundImage">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1024px-Netflix_2015_logo.svg.png"
+            class="netflixLogo" />
+        <div class="signPage">
+            <div>
+                <div class="signInText">Sign In</div>
+                <div>
+                    <input type="text" placeholder="Email or mobile number" class="inputFeild" />
+                </div>
+                <div>
+                    <input type="password" placeholder="Password" class="inputFeild" />
+                </div>
+                <button class="signInButton">Sign In</button>
+                <div class="or">
+                    <div></div>
+                    <div>OR</div>
+                    <div></div>
+                </div>
+                <button class="useASignInCode">Use a Sign-in code</button>
+                <div><a href="https://www.netflix.com/in/loginHelp" class="forgotLink">Forgot password?</a></div>
+                <div class="checkBox">
+                    <input type="checkbox" />&nbsp Remember me
+                </div>
+                <div class="newToNetflix">New to Netflix?<a href="https://www.netflix.com/in/" class="signUpNow">Sign up now.</a></div>
+                <div class="paragraph">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                </div>
+                <div class="paragraph">
+                    The information collected by Google reCAPTCHA is subject to the Google <a
+                        href="https://policies.google.com/privacy" class="link">Privacy Policy</a> and <a
+                        href="https://policies.google.com/terms" class="link">Terms of
+                        Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for
+                    general
+                    security purposes (it is not used for personalised advertising by Google).
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
