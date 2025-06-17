@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <title>Gmail</title>
+    <style>
+        body {
+            background-color: #F0F4F9;
+        }
+
+        .googlebackground {
+            margin: auto;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            padding: 30px 30px;
+            width: 65%;
+            margin-top: 50px;
+        }
+
+        .googleLogo {
+            width: 60px;
+        }
+
+        .signInName {
+            font-size: 40px;
+            color: black;
+            margin: 24px 0px;
+        }
+
+        .inputTextBox {
+            width: 100%;
+            border: 1px solid gray;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 40px;
+
+        }
+
+        .forgotLink {
+            color: #0B57D0;
+            text-decoration: none;
+            cursor: pointer;
+            line-height: 30px;
+        }
+
+        .googleMainBackground {
+            margin-top: 40px;
+            padding: 20px 0px;
+
+        }
+
+        .googleText {
+            margin: 40px 0px;
+            color: #1f1f1f;
+        }
+
+        .createAccountButton {
+            color: #0B57D0;
+            text-decoration: none;
+            margin-right: 25px;
+        }
+
+        .googleButtons {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+        }
+
+        .nextButton {
+            background-color: #0B57D0;
+            color: #FFFFFF;
+            font-weight: bold;
+            padding: 13px 25px;
+
+            border-radius: 20px;
+            border: none;
+        }
+
+        .nextButton:hover {
+            cursor: pointer;
+            background-color: #033a92;
+            color: white;
+        }
+
+        .footerGoogle {
+            margin: auto;
+            width: 65%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .footerLinks {
+            color: gray;
+            text-decoration: none;
+            margin-right: 10px;
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+
+        .footerLinks:hover {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+
+        .languages {
+            border: none;
+            padding: 10px 0px;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+
+        .languages:hover {
+            background-color: lightgray;
+            cursor: pointer;
+
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="googlebackground">
+        <div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAABX1BMVEX////qQzU0qFNChfT7vAU+g/Rhl/U0fvO60fvZ5P37ugDqQTIwp1DqPzDpOSlChfPpPCz/vwD5/foqpUz+9PP/+vrnKDwApF/v9/H+9fT3u7f85uTpNSPpMR7veG/97u31rKf9zAD81G/93Ir//vZFff/e8OP61NHsUUTrSjz5xsLtZlz729j4wb7xkInsWU3whn/tYVb8wwD+7sj80WL/9t7oNzn+7sD8y1P7wjD+89j8zU3+7rz93X78z0YpplrUuhyz3L7F5c2FyJWSzaAxry1fuHXzmpTucGb2savoHQDzmY7607/mFSrzjRrtYDHxgyf3pBvvbi31mR/rUTT/1ADuXxb94Z/P3vyUt/h4p/fu9f7+5Jn8yEKsyfuKtPhqqDjlvBXCtyiVsTun17NSqVKptDRDrGFmmvZes3fX5sQ6kbI5m5k1pWwyrT9Ai88xsCo3onpBiN45nYw7mKOhs5hcAAAJyElEQVR4nO2b+3caxxWAl9UiWexDCyvFCBaQHBnxkADJtuo0Tiggr3DTV9K4caImTlKllKaljZv//3QWELCwy8zszM4sOfP9YJ+cnAP7cefeO3NnLUkCgUAgEAgEAoFAIBAIBAKBQCAQCAS/SA4O9/f3Sy7g78PDA97PQ5HSae6oUaw3K1XdNGzDMNVq5aLfahzlTku8n42UfO2mX7ULtmGauq6qiQmqqurA1QD/o9K/qeV5P2VI8rlWxTAM/V7LFxV4GpVWbtMk909v6gmwFte5eSwT9aOzQ95PjcrB2c2FCYnciqNu6/WbjYjj/qu+beg4cvfohl3Mxb26njUMO5TdBNNOxDqMtb5thrcboxp264y3RwC1ukmqNwmjGkvF0z7J2vSgAsW4LdR8MVxhCVI0EkdxKjcHnxDn3oqiXanx1ppRSxiU9Vx0uxiPrWq+ZWD1dHTMao63HOC8EkX4JqhGi3cQDxqFiMI3wWiecvU7a9pR6gH0wiuOfjmqvSGAQotbw2hEVV28GHU+XX+/GPXyvMds8ti6leqs/EAi6uwN8xXae5d1qL9lvUpPTQblZe5XOGftx6a83PsZzP0STOOns96xnbH1M5j7VVn6JZjnX4mpn1pgfSw8aDL1s1nH76AY3enIx495fZFu2O1feNQX6ZzAb3yn5F4zIU/1mdcX6VQN1eBV3bQLBbVy0S8Wi/36RcV0b9Rgucy+vkiHFyEKjG7YiXrjVS0/v9U92M/XjloXqr1Okv3+RZJa2AVGNYyLxnnJ92bsMJ9rNQPv2DjUF6lWwNTTjUrjdH/dR5ZqrarvvlY12fuVMBPQtJu5tXbTjz1K+Az9CxwmhngLVC8UkQdiuabt/e041BfMDqHbfZx538Gr6uKvx6O+SCWcLZrRPMcchZVa84rKI/8k6RP0BaoajRAD6VrT5OmXR3+pwEyES6DSdEzHo75IUh15gdpFhNLpz5F7D8CjvoD1g1phVPuI5GuqJvPz0QTUAOom2e9/VuFzY/a73yP6JUgvg/hcl518/If32Phx4kXqOHV1BferxvH1DxSep1KXl3+EBVFPbKrfE8Xl+E/rDVVjQ9enJD1NTQw/XWtox+GNgVA8UyakjpVEcCIaDd7PGZr3U8o9rz97L2DHZtbj9GYSHpdzQeX4z/7LVK/E7eUydH614KcE9Qv2A0x6PFoUVBTQL1YNzSLvpwzPibLMar9QTd4vJBHwIrUsmFrpF0QnCN48WhF0l6mnX+gV3g9JwMkHPoJK+vizhSBucoWRnvj5uYk4P1/oF5vbAj1dfikRZ/1iowOYeR4gqKQuX38+DqLeDD2DiQHPlCBBoPh63C82uoR6tzGrifjp1ZVa3dxNmhScgvfLVPn8qsX7GYkITMEp6eO/8BnzUcK/C3qCeHzC+yFJ+PWaGjMVfMr7GYl4AtEDgi/wPnF3myq7hIJfwAKopJ5hCiap8oZQ0G+n7fW7xPzE3a3kFj12viEU/JB6Cu5S1AOCXxIKwovoF9iCNCOY/IrM7wRaRJUnfAW3yQSfwfQUBbPGUF6iW3tkgqvjiuUV+gFum6ccwa1bIsG/QgW/xv1IyhFMkjXCj6CCz/EFaUZwK/mASPApVPARviBVkmSN8EOIn5L6CF+QbgTJGuHH0Ai+z1lw6238BKmSjKEg3QiSbWXiH0FCwfgXGULB+LcJQsENaPRkRWYDtmpkgrHfbJM2+kiOS3QFybZqkRx4qUK42UYYWWBODalHkHBuCB864fYJuhFMJskOvLEfG5KOLKIY/NLUIx46RTG6j9XYEOXyBTMJKQ9+yfo80vVZGq/VU44g6egeegGauvy2iye4gwH0tyC+fIFcYSvp735o97A+8PYBBm8hhsk90uszyEsI6e/bsjYok35JIF/uQCK4R9gGIa+RpP/2UJZl646Giy/bsAiSdol1LwIp6csfXD8QwiwFFz9uYQEkLqLSmiRM/6bdlsdYHfKv8eUBVJC4iAa+jJdK//2hPEVzMuTf48dXsCpKutV2CXidUvm2Lc/QognhLbRLbBPXGMl/v53+Tl7wA1lI4XtW+Qa2Qok3amN8xhbp7x/KHiIppLfbsAAS39CPOVnRm3QHr2EEvRBaYrZ2KKSgtLJG3c3Lsp+s4W1nkPgHmxRc3szMu4M3hNTrDDyAdFJQ8vzTnsXu4A0h9W4P28WAFUo4cJox7/Xg7ODvB0I4pNsModtQIEhnhS5MR5e6w5LhNaWvG7P7GOpHbYXO7mBWukN0aQhvERRX6HQyk75c7Q7eNLTwjr7reAtfoMQTw0XAkeL+7LDOUKbVDaF7GLor1N3NBHSHJcM2HUN4h3BXKPG0YoGTrwO6QyQxfIPiR+Gsu8g/4eGbGpLn4RuksRuNo+AijoZoSFxp0PwoTGO8dC00QWBIdrJAyj86wwovDqoh2NMQ7NoQ+oNLksZZ3ksZWVC2Qifi7jaaXwQBlKRrdEPN6oUJYubuR/gGbSpIOQNdygPEOjMO4qCDvffuOtbLf8Gn9eMVGkEAJamDHkI3iA7eOi33LPD5o3/v7ezB/Wju0hbo4RgCxSG64kTPDf3oP4+hhnRmMatkNYxF6j4sWKgouZgBi3P+2/33Z1giJimNKlZBbobzKA563fWO2W5vYHl+uNFPkGVK8Zy0DN4inSgCx07Wt+JksuUOsLOW18Wo/W6dIdVjxPIjoe7Ylhxlp3fXLWdmmhnX7Xo40FbtXKzRj2sSkfYmzUNXDmE4kQSaA8cZDoeO4wxk97995Sa8/N/jZIAi7V32siH2Il3U1FxR8Cf8Vxq1AxIxygU6BmNDQ0RAv0hGukBdMkNGhtro58cr2xryf/KJYIizZSNi9NPOciJG1eI9ZNuMYiiPrHfeZRp5Ak4ohyyl+GgvPf2C8hwmDobyaKFfRF9gZoRth2EMB7N+Qf8Uv8ZwTZOmjNsvJoLRF9AFypgnCxJejs8XDBqE13DAqpa6x+CdHdZ+oFugz9mIsUbvmPsBQ1Z7GroXVzj0GJUaK8IXGtfTYWJoOVG97QeHQanR6N6N45K5jjiIlsYn/eZ0Ig2i5fBKvznZ6GoNWJ4RvamJR1eOJoj8qucyIBPpK1oRvgyOz2z2Tk8v1A1VhHQdiqmoWcO4rM453isGEiwN82qKGVQULdybN6a4uUiyUjWQe/FbnB6yd05YR2Dn3MWstPiRKV+HcNRA5l2XY9HXEcgCRxldcnwBdVfegOAtMrn8syDDm/G906DXjXniBVHujiNpTS6V5lba5KJp7HYHuQOOP9lu5643dAYDeSqlyYOBM+xdd7obk3MIZDLZBTKZX5CaQCAQCAQCgUAgEAgEAoFAIBAIBALBlP8DB+9mUf1zGaYAAAAASUVORK5CYII="
+                    class="googleLogo" />
+            </div>
+            <div>
+                <div class="signInName">Sign in</div>
+                <div>to continue to Gmail</div>
+            </div>
+        </div>
+            <div class="googleMainBackground">
+                <div>
+                    <input type="text" placeholder="Email or phone" class="inputTextBox" />
+                </div>
+                <div>
+                    <a href="https://accounts.google.com/signin/v2/usernamerecovery?dsh=S-1071690827%3A1749187872331812&flowEntry=AccountChooser&flowName=GlifWebSignIn&hl=en-GB&service=mail"
+                        class="forgotLink">Forgot email ?</a>
+                </div>
+                <div class="googleText">Not your computer? use a browsing window to sign in.<br>
+                    <a href="https://support.google.com/accounts/answer/2917834?visit_id=638847876855409902-2067400990&p=signin_privatebrowsing&hl=en-GB&rd=1"
+                        class="forgotLink">Learn more about using Guest mode</a>
+                </div>
+                <div class="googleButtons">
+                    <a href="" class="createAccountButton">Create account</a>
+                    <button class="nextButton">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="footerGoogle">
+            <div>
+                <select class="languages">
+                    <option>English(United States)</option>
+                    <option>euskara</option>
+                    <option>English(United Kingdom)</option>
+                    <option>eesti</option>
+                    <option>Dansk</option>
+                    <option>catala</option>
+                </select>
+            </div>
+            <div>
+                <a href="https://support.google.com/accounts?hl=en&visit_id=638847974093856451-321284826&rd=2&p=account_iph#topic=3382296" class="footerLinks">Help</a>
+                <a href="https://policies.google.com/privacy?gl=IN&hl=en-US" class="footerLinks">Privacy</a>
+                <a href="https://policies.google.com/terms?gl=IN&hl=en-US" class="footerlinks">Terms</a>
+            </div>
+        </div>
+</body>
+
+</html>
