@@ -10,12 +10,19 @@
         .backgroundImage {
             background-image: url("https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.home_page_bg_desktop.png-26-4770753d59b970e1.png");
             background-size: cover;
-            height: 100%;
-            width: 100%;
+            height:100%;
+            width:100%;
         }
-        .quoraLogo1{
-            width: 20%;
-            margin-top: 25px;
+        .subBackground{
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            height: 650px;
+        }
+
+        .quoraLogo1 {
+            width: 25%;
+            margin-top: 40px;
         }
 
         .quoraLogo {
@@ -23,13 +30,15 @@
             justify-content: center;
             /* margin:20px 0px; */
         }
-        .sentence{
-            color:#636466;
-            font-size: 18px;
+
+        .sentence {
+            color: #636466;
+            font-size: 14px;
             font-family: sans-serif;
-            font-weight: 400;
+            font-weight: 800;
             display: flex;
             justify-content: center;
+            margin-bottom: 25px;
         }
 
         .socialMediaLogo {
@@ -40,76 +49,246 @@
             background-color: white;
             width: 50%;
             margin: auto;
-            /* padding:10px 20px; */
-        }
-        .quoraForm{
-            display:flex;
-            /* justify-content: space-between; */
-            padding:10px 10px;
-        }
-        .formSection1{
-            width:50%;
-            /* border-right: 1px soild gray; */
-        }
-        .formSection2{
-            width:50%;
         }
 
+        .quoraForm {
+            display: flex;
+            padding: 10px 20px;
+        }
+
+        .formSection1 {
+            width: 45%;
+            padding-top:10px;
+            border-right:1px solid lightgrey;
+            padding-right:20px;
+        }
+        .formSection2 {
+            width: 45%;
+            margin-left: 30px;
+        }
+
+        .headline {
+            color: #939598;
+            font-size: 14px;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .link {
+            color: #195FAA;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .socialIcon {
+            display: flex;
+            border: 1px solid lightgray;
+            padding: 13px;
+            margin-top: 10px;
+            border-radius: 5px;
+            align-items: center;
+        }
+
+        .socialIcon:hover {
+            background-color: #faf2f2e6;
+            cursor: pointer;
+        }
+
+        .iconHeadline {
+            color: #282829;
+            margin-left: 15px;
+        }
+
+        .signUpWithEmail {
+            color: #636466;
+            text-align: center;
+            margin: 10px 0px;
+            padding: 10px 0px;
+            margin-bottom: 40px;
+        }
+
+        .signUpWithEmail:hover {
+            background-color: #faf2f2e6;
+            cursor: pointer;
+        }
+
+        .login {
+            font-size: 18px;
+            color: #282829;
+            border-bottom: 1px solid lightgray;
+            font-family: sans-serif;
+            padding-bottom: 10px;
+
+        }
+
+        .email {
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #282829;
+            margin-top: 15px;
+        }
+
+        .inputFeild {
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            margin-top: 10px;
+        }
+
+        .forgotPasswordandButton {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .forgotPassword {
+            color: #939598;
+            text-decoration: none;
+        }
+
+        .loginButton {
+            background-color: #7498f3;
+            ;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            font-family: sans-serif;
+            /* font-weight: 800; */
+        }
+
+        .language {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0px;
+            border-top:1px solid lightgrey;
+            border-bottom:1px solid lightgrey;
+        }
+
+        .hindiLanguage {
+            text-decoration: none;
+            color: #7498f3;
+            margin-right: 10px;
+            font-size: 13px;
+            /* margin: 10px 0px; */
+        }
+
+        .hindiLanguage:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .marathiLanguage {
+            text-decoration: none;
+            color: #7498f3;
+            font-size: 13px;
+            /* margin: 10px 0px; */
+        }
+
+        .marathiLanguage:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .footerEnd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 30px;
+        }
+
+        .footerLinks {
+            text-decoration: none;
+            color: #636466;
+            margin: 15px 0px;
+        }
+
+        .footerLinks:hover {
+            text-decoration: underline;
+        }
+
+        .QuoraInc2025 {
+            text-decoration: none;
+            color: #636466;
+        }
     </style>
 </head>
 
 <body>
     <div class="backgroundImage">
-        <div class="quoraPage">
-            <div class="quoraLogo">
-                <img src="https://images.squarespace-cdn.com/content/v1/639b5b5db16dac1afbf2ca5c/627bdaaf-d0c6-4718-9b34-f0db82c1939b/Logo_Screen_Red_RGB_1024.png"
-                    class="quoraLogo1" />
-            </div>
-            <div class="sentence">A place to share knowledge and better understand the world</div>
-            <div class="quoraForm">
-                <div class="formSection1">
-                    <div>By continuing you indicate that you agree to Quora’s <a
-                            href="https://www.quora.com/about/tos">Terms of Service</a> and <a
-                            href="https://www.quora.com/about/privacy">Privacy Policy</a>.</div>
-                    <div>
-                        <div>
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-logo-icon-download-in-svg-png-gif-file-formats--brands-pack-logos-icons-189824.png?f=webp&w=256"
-                                class="socialMediaLogo" />
-                        </div>
-                        <div>Continue with Google</div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
-                                class="socialMediaLogo" />
-                        </div>
-                        <div>Continue with Facebook</div>
-                    </div>
-                    <div>Sign up with email</div>
+        <div class="subBackground">
+            <div class="quoraPage">
+                <div class="quoraLogo">
+                    <img src="https://images.squarespace-cdn.com/content/v1/639b5b5db16dac1afbf2ca5c/627bdaaf-d0c6-4718-9b34-f0db82c1939b/Logo_Screen_Red_RGB_1024.png"
+                        class="quoraLogo1" />
                 </div>
-                <div class="formSection2">
-                    <div>login</div>
-                    <div>Email</div>
-                    <div>
-                        <input type="text" placeholder="Your email" />
+                <div class="sentence">A place to share knowledge and better understand the world</div>
+                <div class="quoraForm">
+                    <div class="formSection1">
+                        <div class="headline">By continuing you indicate that you agree to Quora’s <a
+                                href="https://www.quora.com/about/tos" class="link">Terms of Service</a> and <a
+                                href="https://www.quora.com/about/privacy" class="link">Privacy Policy</a>.</div>
+                        <div class="socialIcon">
+                            <div>
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-logo-icon-download-in-svg-png-gif-file-formats--brands-pack-logos-icons-189824.png?f=webp&w=256"
+                                    class="socialMediaLogo" />
+                            </div>
+                            <div class="iconHeadline">Continue with Google</div>
+                        </div>
+                        <div class="socialIcon">
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+                                    class="socialMediaLogo" />
+                            </div>
+                            <div class="iconHeadline">Continue with Facebook</div>
+                        </div>
+                        <div class="signUpWithEmail">Sign up with email</div>
                     </div>
-                    <div>Password</div>
-                    <div>
-                        <input type="password" placeholder="Your password" />
-                    </div>
-                    <div><a href="#">Fogot password?</a>
-                        <button>Login</button>
+                    <div class="border"></div>
+                    <div class="formSection2">
+                        <div class="login">Login</div>
+                        <div class="email">Email</div>
+                        <div>
+                            <input type="text" placeholder="Your email" class="inputFeild" />
+                        </div>
+                        <div class="email">Password</div>
+                        <div>
+                            <input type="password" placeholder="Your password" class="inputFeild" />
+                        </div>
+                        <div class="forgotPasswordandButton">
+                            <div><a href="#" class="forgotPassword">Forgot password?</a></div>
+                            <div>
+                                <button class="loginButton">Login</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- <hr /> -->
+                <div class="language">
+                    <a href="" class="hindiLanguage">हिन्दी</a>
+                    <a href="" class="marathiLanguage">मराठी</a>
+                </div>
+                <!-- <hr /> -->
+                <div class="footerEnd">
+                    <a href="https://www.quora.com/about" class="footerLinks">About .</a>
+                    <a href="https://www.careers.quora.com/" class="footerLinks">careers .</a>
+                    <a href="https://www.quora.com/about/privacy" class="footerLinks">Privacy .</a>
+                    <a href="https://www.quora.com/about/tos" class="footerLinks">Terms .</a>
+                    <a href="https://help.quora.com/hc/en-us/requests/new" class="footerLinks">Contact .</a>
+                    <a href="https://www.quora.com/about/languages" class="footerLinks">Languages .</a>
+                    <a href="https://www.quora.com/about/your_ad_choices" class="footerLinks">Your ad Choices .</a>
+                    <a href="https://www.quora.com/press" class="footerLinks">Press .</a>
+                    <a href="" class=" QuoraInc2025">© Quora, Inc. 2025</a>
+                </div>
             </div>
-            <hr />
-            <div>
-                <a href="">हिन्दी</a>
-                <a href="">मराठी</a>
-            </div>
-            <hr />
         </div>
-
     </div>
 </body>
 
